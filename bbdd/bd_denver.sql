@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-06-2019 a las 09:44:15
+-- Tiempo de generación: 10-06-2019 a las 10:12:02
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -22,9 +22,9 @@ SET time_zone = "+00:00";
 -- Base de datos: `bd_denver`
 --
 
-DROP DATABASE IF EXISTS  `bd_denver`;
-CREATE DATABASE IF NOT EXISTS  `bd_denver`;
-USE  `bd_denver`;
+DROP DATABASE IF EXISTS `bd_denver`;
+CREATE DATABASE `bd_denver`;
+USE `bd_denver`;
 
 -- --------------------------------------------------------
 
@@ -32,7 +32,7 @@ USE  `bd_denver`;
 -- Estructura de tabla para la tabla `clientes`
 --
 
-CREATE TABLE `clientes` (
+CREATE TABLE IF NOT EXISTS `clientes` (
   `id` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `email` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE `clientes` (
 -- Estructura de tabla para la tabla `mis_productos`
 --
 
-CREATE TABLE `mis_productos` (
+CREATE TABLE IF NOT EXISTS `mis_productos` (
   `id` int(11) NOT NULL,
   `name` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
   `description` text COLLATE utf8_spanish_ci NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE `mis_productos` (
 -- Estructura de tabla para la tabla `pedidos`
 --
 
-CREATE TABLE `pedidos` (
+CREATE TABLE IF NOT EXISTS `pedidos` (
   `id` int(11) NOT NULL,
   `customer_id` int(11) NOT NULL,
   `total_price` float(10,2) NOT NULL,
@@ -80,7 +80,7 @@ CREATE TABLE `pedidos` (
 -- Estructura de tabla para la tabla `pedidos_productos`
 --
 
-CREATE TABLE `pedidos_productos` (
+CREATE TABLE IF NOT EXISTS `pedidos_productos` (
   `id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
@@ -93,7 +93,7 @@ CREATE TABLE `pedidos_productos` (
 -- Estructura de tabla para la tabla `usuarios`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE IF NOT EXISTS `usuarios` (
   `id_user` int(11) NOT NULL,
   `usuario` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
   `contrasena` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
