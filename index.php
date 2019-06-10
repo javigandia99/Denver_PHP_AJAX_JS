@@ -1,11 +1,18 @@
 <?php
 include 'arriba.php';
 
+	session_start();
+
+	if(isset($_SESSION['nombre'])){
+    $nomUsu = $_SESSION['nombre'];
+  echo  "<h1>Bienvenido  $nomUsu</h1>";
+	}
 ?>
 <div class="panel-body">
     <h1>Mis Productos</h1>
     <a href="vercarrito.php" class="cart-link" title="Ver Carta"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-    <div id="products" class="row list-group">
+    <div id="products" class="d-flex flex-row">
+
         <?php
         //get rows query
         $query = $conn->query("SELECT * FROM mis_productos ORDER BY id DESC LIMIT 10");
@@ -25,14 +32,14 @@ include 'arriba.php';
                             <p class="lead"><?php echo '$'.$row["price"].' USD'; ?></p>
                         </div>
                         <div class="col-md-6">
-                            <a class="btn btn-success" href="agregarcarrito.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar a la Carta</a>
+                            <a class="btn btn-success" href="agregarcarrito.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
         <?php } }else{ ?>
-        <p>Producto(s) no existe.....</p>
+        <p>No hay productos todavia.</p>
         <?php } ?>
     </div>
         </div>

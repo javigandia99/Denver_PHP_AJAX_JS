@@ -11,13 +11,17 @@
 
 <body>
     <?php
-    if (isset($_SESSION['user'])) {
-        header("Location: perfil.php");
+    include "conexion.php";
+    session_start();
+
+    if (isset($_SESSION['nombre'])) {
+        header("Location: index.php");
+        $nomUsu = $_SESSION['nombre'];
+        echo  "<h1>Bienvenido </h1>";
+
     }
     ?>
-    <?php
-    include "conexion.php";
-    ?>
+
     <div class="container-fluid pt-5 pb-3" id="proyects">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2">

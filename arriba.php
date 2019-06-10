@@ -37,6 +37,9 @@ include "conexion.php";
                         <li class="nav-item">
                             <a class="nav-link" href="cerrar.php">Cerrar Sesion</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio.php">Log in</a>
+                        </li>
                     </ul>
                 </div>
 
