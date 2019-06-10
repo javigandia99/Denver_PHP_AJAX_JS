@@ -26,7 +26,7 @@ include "conexion.php";
                             <a class="nav-link" href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="carrito.php">Carrito de la compra</a>
+                            <a class="nav-link" href="vercarrito.php">Carrito de la compra</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registro.php">Registrar</a>
