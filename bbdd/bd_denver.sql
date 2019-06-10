@@ -1,13 +1,15 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
+﻿-- phpMyAdmin SQL Dump
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-05-2019 a las 17:46:58
--- Versión del servidor: 10.1.21-MariaDB
--- Versión de PHP: 5.6.30
+-- Tiempo de generación: 10-06-2019 a las 11:15:43
+-- Versión del servidor: 10.1.38-MariaDB
+-- Versión de PHP: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bd_denver`
 --
+
 
 DROP DATABASE IF EXISTS `bd_denver`;
 CREATE DATABASE `bd_denver`;
@@ -32,7 +35,10 @@ USE `bd_denver`;
 
 CREATE TABLE IF NOT EXISTS `clientes` (
   `id` int(11) NOT NULL,
+  `user` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
+  `password` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `surname` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
   `email` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `phone` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
   `address` text COLLATE utf8_spanish_ci NOT NULL,
@@ -52,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `mis_productos` (
   `name` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
   `description` text COLLATE utf8_spanish_ci NOT NULL,
   `price` float(10,2) NOT NULL,
+  `photo` text COLLATE utf8_spanish_ci NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   `status` enum('0','1') COLLATE utf8_spanish_ci NOT NULL DEFAULT '1'

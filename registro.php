@@ -14,57 +14,41 @@ include 'arriba.php';
             <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2">
                 <h2>Crear una cuenta</h2>
                 <section class="register-form">
-                    <p>¿Ya tiene una cuenta? <a href="motor/login.php">¡Inicie Sesión!</a></p>
+                    <p>¿Ya tiene una cuenta? <a href="login.php">¡Inicie Sesión!</a></p>
                     <form method="post" action="registro.php">
-                        <div class="form-group row ">
-                            <label class="col-md-3 form-control-label">
-                                Tratamiento
-                            </label>
-                        </div>
-                        <div class="col-md-6 form-control-valign">
-                            <label class="radio-inline">
-                                <span class="custom-radio">
-                                    <input name="id_gender" type="radio" value="1">
-                                    <span></span>
-                                </span>
-                                Sr.
-                            </label>
-                            <label class="radio-inline">
-                                <span class="custom-radio">
-                                    <input name="id_gender" type="radio" value="2">
-                                    <span></span>
-                                </span>
-                                Sra.
-                            </label>
-                        </div>
+
                         <div class="form-group row" id="usr">
                             <label for="usr">Usuario:</label>
-                            <input type="text" class="form-control" name="usr" id="usr" required>
+                            <input type="text" class="form-control" name="user" id="user" required>
                         </div>
                         <div class="form-group row">
                             <label for="pwd">Contraseña:</label>
-                            <input type="password" class="form-control" name="pwd" id="pwd" required>
+                            <input type="password" class="form-control" name="password" id="password" required>
                         </div>
                         <div class="form-group row">
                             <label for="name">Nombre:</label>
-                            <input type="name" class="form-control" name="name" id="name" required>
+                            <input type="text" class="form-control" name="name" id="name" required>
                         </div>
                         <div class="form-group row">
                             <label for="name">Apellidos:</label>
-                            <input type="name" class="form-control" name="surname" id="surname" required>
+                            <input type="text" class="form-control" name="surname" id="surname" required>
                         </div>
                         <div class="form-group row">
                             <label for="name">Numero de telefono:</label>
-                            <input type="name" class="form-control" name="number" id="number">
+                            <input type="number" class="form-control" name="number" id="number">
                         </div>
                         <div class="form-group row">
                             <label for="name">Email:</label>
                             <input type="name" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
                         </div>
-                        
+                        <div class="form-group row">
+                            <label for="name">Dirección:</label>
+                            <input type="name" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+                        </div>
+
                         <div>
                             <button type="submit" class="btn btn-primary" id="submit">Registrarse</button>
-                            <button type="submit" class="btn btn-warning"><a href="inicio.php">Ya estoy registrado</a></button>
+                            <button class="btn btn-warning"><a href="inicio.php">Ya estoy registrado</a></button>
                         </div>
                     </form>
                     <div class="col-12" id="imgproyect">
