@@ -1,15 +1,13 @@
-﻿-- phpMyAdmin SQL Dump
--- version 4.8.5
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-06-2019 a las 11:15:43
--- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.3.2
+-- Tiempo de generación: 14-06-2017 a las 07:19:49
+-- Versión del servidor: 10.1.21-MariaDB
+-- Versión de PHP: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,12 +17,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `bd_denver`
+-- Base de datos: `bd_prueba_php`
 --
 
 
 DROP DATABASE IF EXISTS `bd_denver`;
-CREATE DATABASE `bd_denver`;
+CREATE DATABASE IF NOT EXISTS `bd_denver`;
 USE `bd_denver`;
 
 -- --------------------------------------------------------
