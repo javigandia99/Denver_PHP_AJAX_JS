@@ -1,4 +1,9 @@
 <?php
+if (isset($_SESSION['usr'])) {
+    header("Location:perfil.php");
+}
+?>
+<?php
 include 'arriba.php';
 ?>
 
@@ -9,7 +14,7 @@ include 'arriba.php';
             <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2">
                 <h2>Crear una cuenta</h2>
                 <section class="register-form">
-                    <p>¿Ya tiene una cuenta? <a href="login.php">¡Inicie Sesión!</a></p>
+                    <p>¿Ya tiene una cuenta? <a href="motor/login.php">¡Inicie Sesión!</a></p>
                     <form method="post" action="registro.php">
                         <div class="form-group row ">
                             <label class="col-md-3 form-control-label">

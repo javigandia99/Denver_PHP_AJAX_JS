@@ -1,7 +1,7 @@
-    <?php    
+    <?php
     include "conexion.php";
     session_start();
-   
+
     ?>
 
     <?php
@@ -14,15 +14,14 @@
         $sql = "SELECT id_user FROM usuarios WHERE usuario = '$nomUsu' and contrasena = '$pwdUsu'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-               
-        
+
         $count = mysqli_num_rows($result);
         if ($count == 1) {
-          
+
             $_SESSION['usr'] = $nomUsu;
             //  echo "Correctamente logeado";
 
-            header("Location: bienvenido.php");
+            header("Location: index.php");
         } else {
             header("Location: inicio.php?error=notOk");
         }

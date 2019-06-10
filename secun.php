@@ -1,8 +1,6 @@
 <?php
 include 'arriba.php';
-
 ?>
-
 <body>
     <main>
         <div class="container-fluid pt-2 pb-1" id="proyects">
@@ -16,7 +14,6 @@ include 'arriba.php';
             </div>
         </div>
     </main>
-
     <?php
     include 'abajo.php';
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <title>Formulario de Login</title>
 </head>
 
@@ -33,7 +33,7 @@
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary" id="submit">Inicar Sesion</button>
-                        <button class="btn btn-warning"><a href="registro.php">Registrarse</a></button>
+                        <button class="btn btn-warning"><a href="motor/registro.php">Registrarse</a></button>
                     </div>
                 </form>
             </div>
@@ -45,7 +45,7 @@
                 ?>
             </div>
             <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2" id="imgproyect">
-                    <img src="https://66.media.tumblr.com/77f0ea97b525c668b236f6c39f7ae30f/tumblr_inline_mlsj3koXST1qz4rgp.gif" class="img-fluid">
+                <img src="https://66.media.tumblr.com/77f0ea97b525c668b236f6c39f7ae30f/tumblr_inline_mlsj3koXST1qz4rgp.gif" class="img-fluid">
             </div>
 </body>
 

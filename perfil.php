@@ -1,5 +1,5 @@
 <?php
-if (isset($_SESSION['usr'])) {
+if (!isset($_SESSION['usr'])) {
     header("Location:inicio.php");
 }
 ?>
@@ -9,7 +9,7 @@ include 'arriba.php';
 <div class="navbar-collapse collapse" id="navb">
     <ul class="navul navbar-nav">
         <li class="navText nav-item d-flex align-items-start">
-            <a class="nav-link " href="bienvenido.php">Bienvenida</a>
+            <a class="nav-link " href="index.php">Bienvenida</a>
         </li>
         <li class="navText nav-item">
             <a class="nav-link" href="secun.php">Secundaria</a>
