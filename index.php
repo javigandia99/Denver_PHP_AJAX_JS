@@ -9,6 +9,7 @@ include 'arriba.php';
         <?php
         //get rows query
         $query = $conn->query("SELECT * FROM mis_productos ORDER BY id DESC LIMIT 10");
+        $rutaPhoto = "imagenes/";
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
         ?>
@@ -16,7 +17,8 @@ include 'arriba.php';
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
-                    <div class="images" style="background-image: url(<?php echo $row['photo']; ?>)">
+                    <div class="images" style="background-image: url(<?php echo $rutaPhoto.$row['photo']; ?>)">
+                    </div>
                     <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
                     <div class="row">
                         <div class="col-md-6">
