@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---DROP DATABASE IF EXISTS  `bd_denver`;
+DROP DATABASE IF EXISTS  `bd_denver`;
 CREATE DATABASE IF NOT EXISTS  `bd_denver`;
 USE  `bd_denver`;
 -- Base de datos: `bd_denver`
