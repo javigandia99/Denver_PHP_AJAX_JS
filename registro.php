@@ -3,6 +3,7 @@ if (isset($_SESSION['usr'])) {
     header("Location:perfil.php");
 }
 ?>
+
 <?php
 include 'arriba.php';
 ?>
@@ -51,10 +52,6 @@ include 'arriba.php';
                             <button class="btn btn-warning"><a href="inicio.php">Ya estoy registrado</a></button>
                         </div>
                     </form>
-                    <div class="col-12" id="imgproyect">
-                        <img src="https://media.giphy.com/media/owUQcK4bijuKY/giphy.gif" class="img-fluid">
-                    </div>
-
             </div>
 
             <?php

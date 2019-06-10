@@ -11,7 +11,7 @@
 
 <body>
     <?php
-    if (isset($_SESSION['usr'])) {
+    if (isset($_SESSION['user'])) {
         header("Location: perfil.php");
     }
     ?>
@@ -24,16 +24,16 @@
                 <h2>Formulario de LOGIN</h2>
                 <form method="post" action="login.php">
                     <div class="form-group" id="name">
-                        <label for="usr">User:</label>
-                        <input type="text" class="form-control" id="usr" name="usr" placeholder="Enter user" required>
+                        <label for="user">User:</label>
+                        <input type="text" class="form-control" id="user" name="usr" placeholder="Enter user" required>
                     </div>
                     <div class="form-group">
                         <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-primary" id="submit">Inicar Sesion</button>
-                        <button class="btn btn-warning"><a href="motor/registro.php">Registrarse</a></button>
+                        <button class="btn btn-warning"><a href="registro.php">Registrarse</a></button>
                     </div>
                 </form>
             </div>
