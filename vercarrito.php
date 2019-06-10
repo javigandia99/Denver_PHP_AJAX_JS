@@ -1,6 +1,11 @@
 <?php
+include 'carrito.php';
+$carrito = new carrito;
+?>
+<?php
 include 'arriba.php';
 ?>
+
 <body>
     <main>
         <div class="container-fluid pt-2 pb-1" id="proyects">
