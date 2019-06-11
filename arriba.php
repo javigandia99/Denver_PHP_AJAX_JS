@@ -48,7 +48,7 @@ session_start();
               <a class="nav-link" href="quienesSomos.php">Quienes somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="vercarrito.php">Carrito de la compra</a>
+              <a class="nav-link" href="verCarrito2.php">Carrito de la compra</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cerrar.php">Cerrar Sesion</a>
