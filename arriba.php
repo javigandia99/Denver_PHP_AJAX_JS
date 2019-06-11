@@ -41,12 +41,12 @@ session_start();
           </li>
 
         </ul>
-        <ul class="navbar-nav ml-auto nav-flex-icons">
-          <form class="form-inline">
-            <div class="md-form my-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            </div>
+        
+        <form class="form-inline">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
           </form>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
           <li class="nav-item">
             <a href="vercarrito.php" class="nav-link waves-effect waves-light">1
               <i class="fas fa-shopping-cart"></i>
@@ -75,5 +75,4 @@ session_start();
       </div>
     </nav>
     <!--/.Navbar -->
-    <!--/.Navbar-->
   </header>

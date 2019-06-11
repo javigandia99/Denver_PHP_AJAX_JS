@@ -65,7 +65,7 @@ include 'arriba.php';
                 $address = $_POST["address"];
 
                 $sql = "INSERT INTO clientes (user, password, name, surname, phone, email, address)";
-                $sql .= " VALUES ('" . $user . "','" . $password . " ', '" . $name . "','" . $surname . "','" . $phone . "','" . $email . "','" . $address."')";
+                $sql .= " VALUES ('" . $user . "','" . $password . " ', '" . $name . "','" . $surname . "','" . $phone . "','" . $email . "','" . $address . "')";
 
                 if ($conn->query($sql) === true) {
                     echo "Nuevo registro realizado correctamente";
