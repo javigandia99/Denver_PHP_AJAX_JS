@@ -3,6 +3,7 @@
   error_reporting(0);
 ?>
 <main class="container">
+  <br>
   <h1>Carrito de compras</h1>
   <table class="table">
     <tr>
