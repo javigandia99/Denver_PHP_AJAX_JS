@@ -47,7 +47,7 @@ include 'arriba.php';
                         </div>
 
                         <div>
-                            <button type="submit" class="btn btn-primary" id="submit">Registrarse</button>
+                            <button type="submit" class="btn btn-block btn-outline-primary btn-rounded" id="submit">Registrarse</button>
                             <p>¿Ya tiene una cuenta? <a href="login.php">¡Inicie Sesión!</a></p>
                         </div>
                     </form>

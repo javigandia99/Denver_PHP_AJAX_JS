@@ -23,9 +23,8 @@ if (isset($_SESSION["user"])) {
                     <div>
                         <button type="submit" class="btn btn-block btn-outline-success btn-rounded" id="submit">Inicar Sesion</button>
                     </div>
-                    <div>
-                        <h5>Eres nuevo en Denver</h5>
-                        <a class="btn btn-block btn-outline-primary btn-rounded" href="registro.php">Crear tu cuenta de Denver</a>
+                    <div class="mt-2">
+                        <p>Eres nuevo en Denver <a class="btn btn-outline-warning btn-rounded  btn-sm" href="registro.php">¡Crear tu cuenta aqui!</a></p>
                     </div>
                 </form>
             </div>
