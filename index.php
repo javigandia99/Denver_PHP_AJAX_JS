@@ -1,17 +1,27 @@
 <?php
 include 'arriba.php';
 
-	session_start();
 
-	if(isset($_SESSION['nombre'])){
-    $nomUsu = $_SESSION['nombre'];
-  echo  "<h1>Bienvenido  $nomUsu</h1>";
+	if(isset($_SESSION['user'])){
+    $nomUsu = $_SESSION['user'];
+
 	}
 ?>
-<div class="panel-body">
-    <h1>Mis Productos</h1>
+<div class="item col-lg-12 cajaTemporada" id="cajaIntro">
+  <div class="titleTemporada">
+    <h1>Temporada CGS</h1>
+
+  </div>
+  <div class="titleSaludo">
+    <?php
+      echo  "<h1>Bienvenido  $nomUsu</h1>"; ?>
+  </div>
+
+  </div>
+<main class="panel-body">
     <a href="vercarrito.php" class="cart-link" title="Ver Carta"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-    <div id="products" class="d-flex flex-row">
+
+    <div id="products" class="d-flex flex-row justify-content-center flex-wrap">
 
         <?php
         //get rows query
@@ -20,7 +30,7 @@ include 'arriba.php';
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
         ?>
-        <div class="item col-lg-4">
+        <div class="item col-lg-3 cajas">
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
@@ -42,7 +52,7 @@ include 'arriba.php';
         <p>No hay productos todavia.</p>
         <?php } ?>
     </div>
-        </div>
+  </main>
         <?php
         include 'abajo.php';
 

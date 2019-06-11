@@ -2,8 +2,8 @@
 include 'arriba.php'
 ?>
 <?php
-if (isset($_SESSION['user'])) {
-    header("Location: perfil.php");
+if (isset($_SESSION["user"])) {
+    header("Location: index.php");
 }
 ?>
 <main>

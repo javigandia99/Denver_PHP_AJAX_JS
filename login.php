@@ -5,13 +5,13 @@
     ?>
 
     <?php
-    if (isset($_POST["usr"]) && isset($_POST["password"])) {
+    if (isset($_POST["user"]) && isset($_POST["password"])) {
         /*Se ha enviado informacion*/
 
-        $nomUsu = mysqli_real_escape_string($conn, $_POST['usr']);
+        $nomUsu = mysqli_real_escape_string($conn, $_POST['user']);
         $pwdUsu = mysqli_real_escape_string($conn, $_POST['password']);
 
-        $sql = "SELECT id_user FROM usuarios WHERE usuario = '$nomUsu' and contrasena = '$pwdUsu'";
+        $sql = "SELECT id FROM clientes WHERE user = '$nomUsu' and password = '$pwdUsu'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -22,7 +22,7 @@
 
             session_start();
 
-            $_SESSION["nombre"] = $nomUsu;
+            $_SESSION["user"] = $nomUsu;
 
             $_SESSION["carrito"] = array();
 
@@ -30,10 +30,10 @@
 
             header("Location: index.php");
            } else {
-            header("Location: errores.php?error=notOk");
+            header("Location: inicio.php?error=notOk");
         }
     } else {
-        header("Location: errores.php?error=noform");
+        header("Location: inicio.php?error=noform");
 
 
 
