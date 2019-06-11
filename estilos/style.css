@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap');
 
 body{
   background-color: rgb(242, 242, 242);
@@ -83,5 +82,10 @@ padding: 10px;
 box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
 }
 #title{
-  font-family: 'Open Sans', sans-serif;
+  font-size: 40pt;
+  margin-top: 5%;
+  font-family: 'Faster One', cursive;
+}
+#titleyear{
+  font-family: 'Faster One', cursive;
 }

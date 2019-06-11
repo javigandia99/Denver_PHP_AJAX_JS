@@ -10,6 +10,7 @@ include 'arriba.php';
 <div class="item col-lg-12 cajaTemporada" id="cajaIntro">
   <div class="titleTemporada">
     <h1 id="title">Temporada CGS</h1>
+    <h1 id="titleyear">2019</h1>
 
   </div>
   <div class="titleSaludo">
