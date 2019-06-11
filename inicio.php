@@ -21,11 +21,11 @@ if (isset($_SESSION["user"])) {
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary" id="submit">Inicar Sesion</button>
+                        <button type="submit" class="btn btn-block btn-outline-success btn-rounded" id="submit">Inicar Sesion</button>
                     </div>
                     <div>
                         <h5>Eres nuevo en Denver</h5>
-                        <a class="btn btn-warning" href="registro.php">Crear tu cuenta de Denver</a>
+                        <a class="btn btn-block btn-outline-primary btn-rounded" href="registro.php">Crear tu cuenta de Denver</a>
                     </div>
                 </form>
             </div>
