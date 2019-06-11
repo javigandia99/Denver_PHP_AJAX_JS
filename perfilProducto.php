@@ -28,8 +28,8 @@ include 'arriba.php';
         ?>
 				<div class="item col-lg-5 cajaTemporada2">
 				  <div class="titleTemporada">
-				    <h1 id="title">Temporada CGS</h1>
-				    <h1 id="titleyear">2019</h1>
+				    <h1 id="title2">Temporada CGS</h1>
+				    <h1 id="titleyear2">2019</h1>
 				  </div>
 				  </div>
         <div class="item col-lg-5 cajas">

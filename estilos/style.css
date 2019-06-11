@@ -55,6 +55,21 @@ box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
   height: 100%;
   align-items: center;
 }
+.cajaTemporada2{
+
+  background-image: url("../imagenes/temporada1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+border-radius: 20px;
+margin: 10px;
+padding: 10px;
+-webkit-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+-moz-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+}
 h4{
   text-align: center;
 }
@@ -88,9 +103,18 @@ padding: 10px;
   margin-top: 5%;
   font-family: 'Faster One', cursive;
 }
+#title2{
+  color: white;
+  font-family: 'Faster One', cursive;
+}
 #titleyear{
+
   margin-left: 20px;
 
+  font-family: 'Faster One', cursive;
+}
+#titleyear2{
+  color: white;
   font-family: 'Faster One', cursive;
 }
 #bienvenido{
