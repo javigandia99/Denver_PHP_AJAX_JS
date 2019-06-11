@@ -1,5 +1,5 @@
 <?php
-if (isset($_SESSION['usr'])) {
+if (isset($_SESSION['user'])) {
     header("Location:perfil.php");
 }
 ?>
@@ -10,15 +10,14 @@ include 'arriba.php';
 
 <main>
 
-    <div class="container-fluid pt-5 pb-3" id="proyects">
+    <div class="container-fluid pt-5 pb-3" id="registrodiv">
         <div class="row">
-            <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2">
+            <div class="col-10 col-md-10 col-lg-8 col-xl-8 p-3 offset-1 offset-lg-2 offset-xl-2">
                 <h2>Crear una cuenta</h2>
                 <section class="register-form">
-                    <p>¿Ya tiene una cuenta? <a href="login.php">¡Inicie Sesión!</a></p>
                     <form method="post" action="registro.php">
 
-                        <div class="form-group row" id="usr">
+                        <div class="form-group row" id="user">
                             <label for="usr">Usuario:</label>
                             <input type="text" class="form-control" name="user" id="user" required>
                         </div>
@@ -40,32 +39,33 @@ include 'arriba.php';
                         </div>
                         <div class="form-group row">
                             <label for="name">Email:</label>
-                            <input type="name" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
                         </div>
                         <div class="form-group row">
                             <label for="name">Dirección:</label>
-                            <input type="name" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+                            <input type="text" class="form-control" name="address" id="address" required>
                         </div>
 
                         <div>
                             <button type="submit" class="btn btn-primary" id="submit">Registrarse</button>
-                            <button class="btn btn-warning"><a href="inicio.php">Ya estoy registrado</a></button>
+                            <p>¿Ya tiene una cuenta? <a href="login.php">¡Inicie Sesión!</a></p>
                         </div>
                     </form>
             </div>
 
             <?php
             //Insert en tabla usuarios
-            if (isset($_POST["usr"], $_POST["pwd"], $_POST["name"], $_POST["surname"], $_POST["number"], $_POST["email"]) and $_POST["usr"] != "" and $_POST["pwd"] != "" and $_POST["name"] != "" and $_POST["surname"] != "" and $_POST["number"] != "" and $_POST["email"] != "") {
-                $usr = $_POST["usr"];
-                $pwd = $_POST["pwd"];
+            if (isset($_POST["user"], $_POST["password"], $_POST["name"], $_POST["surname"], $_POST["number"], $_POST["email"], $_POST["address"]) and $_POST["user"] != "" and $_POST["password"] != "" and $_POST["name"] != "" and $_POST["surname"] != "" and $_POST["number"] != "" and $_POST["email"] != "" and $_POST["address"] != "") {
+                $user = $_POST["user"];
+                $password = $_POST["password"];
                 $name = $_POST["name"];
                 $surname = $_POST["surname"];
-                $number = $_POST["number"];
+                $phone = $_POST["number"];
                 $email = $_POST["email"];
+                $address = $_POST["address"];
 
-                $sql = "INSERT INTO usuarios (usuario, contrasena, nombre, apellidos, numerotelefono, email)";
-                $sql .= " VALUES ('" . $usr . "','" . $pwd . " ', '" . $name . "','" . $surname . "','" . $number . "','" . $email . "')";
+                $sql = "INSERT INTO clientes (user, password, name, surname, phone, email, address)";
+                $sql .= " VALUES ('" . $user . "','" . $password . " ', '" . $name . "','" . $surname . "','" . $phone . "','" . $email . "','" . $address."')";
 
                 if ($conn->query($sql) === true) {
                     echo "Nuevo registro realizado correctamente";
