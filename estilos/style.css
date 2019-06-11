@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Faster+One|Fjalla+One&display=swap');
-
+A:link {text-decoration: none }
+A:visited {text-decoration: none }
+A:hover {text-decoration: none }
 body{
   background-color: rgb(242, 242, 242);
   width: 100%;
@@ -11,6 +13,8 @@ body{
   height: 250px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .registrodiv {
@@ -43,6 +47,26 @@ padding: 10px;
 box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
 
 }
+.cajas2{
+  padding: 0px;
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+border-radius: 20px;
+margin: 10px;
+margin-top: 30px;
+-webkit-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+-moz-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+
+}
+.thumbnail2{
+  width: 50%;
+  height: 100%;
+padding: 3%;
+}
 .cajaTemporada{
   padding-right: 0px;
   display: flex;
@@ -56,19 +80,15 @@ box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
   align-items: center;
 }
 .cajaTemporada2{
-
+  border-radius: 20px;
   background-image: url("../imagenes/temporada1.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   background-color: white;
-border-radius: 20px;
-margin: 10px;
 padding: 10px;
--webkit-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
--moz-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+width: 50%;
 }
 h4{
   text-align: center;
@@ -104,6 +124,7 @@ padding: 10px;
   font-family: 'Faster One', cursive;
 }
 #title2{
+  display: inline;
   color: white;
   font-family: 'Faster One', cursive;
 }
@@ -114,6 +135,8 @@ padding: 10px;
   font-family: 'Faster One', cursive;
 }
 #titleyear2{
+  display: inline;
+
   color: white;
   font-family: 'Faster One', cursive;
 }
