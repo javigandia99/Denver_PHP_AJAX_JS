@@ -26,14 +26,15 @@ include 'arriba.php';
         if($query->num_rows == 1){
             while($row = $query->fetch_assoc()){
         ?>
-				<div class="item col-lg-5 cajaTemporada2">
-				  <div class="titleTemporada">
-				    <h1 id="title2">Temporada CGS</h1>
-				    <h1 id="titleyear2">2019</h1>
-				  </div>
-				  </div>
-        <div class="item col-lg-5 cajas">
-            <div class="thumbnail">
+
+        <div class="item col-lg-11 cajas2">
+					<div class="item d-none d-sm-none d-lg-flex cajaTemporada2">
+						<div class="titleTemporada">
+							<h1 id="title2">Temporada CGS</h1>
+							<h1 id="titleyear2">2019</h1>
+						</div>
+						</div>
+            <div class="thumbnail2">
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
                     <div class="images" style="background-image: url(<?php echo $rutaPhoto.$row['photo']; ?>)">

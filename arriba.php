@@ -33,23 +33,12 @@ session_start();
 
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="contacto.php">Contacto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="quienesSomos.php">Quienes somos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="verCarrito2.php">Carrito de la compra</a>
-            </li>
-            <?php
-            if(!isset($_SESSION['user'])){
-              echo '<li class="nav-item active"><a class="nav-link" href="registro.php">Registrar</a></li>';
-              echo '<li class="nav-item active"><a class="nav-link" href="inicio.php">login</a></li>';
-            } else{
-              echo '<li class="nav-item active"><a class="nav-link" href="cerrar.php">Cerrar sesion</a></li>';
-            }
-              ?>
         </ul>
 
         <form class="form-inline">
@@ -58,7 +47,7 @@ session_start();
           </form>
         <ul class="navbar-nav ml-auto nav-flex-icons">
           <li class="nav-item">
-            <a href="vercarrito.php" class="nav-link waves-effect waves-light">1
+            <a href="verCarrito2.php" class="nav-link waves-effect waves-light">1
               <i class="fas fa-shopping-cart"></i>
             </a>
           </li>
