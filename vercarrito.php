@@ -16,6 +16,9 @@ include 'arriba.php';
         </thead>
         <tbody>
             <?php
+            include "carrito.php";
+            $cart = new Cart;
+
             if ($cart->total_items() > 0) {
                 //get cart items from session
                 $cartItems = $cart->contents();

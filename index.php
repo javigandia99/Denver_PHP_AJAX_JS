@@ -24,11 +24,13 @@ include 'arriba.php';
     <div id="products" class="d-flex flex-row justify-content-center flex-wrap">
 
         <?php
+				$lastId = 0;
         //get rows query
         $query = $conn->query("SELECT * FROM mis_productos ORDER BY id DESC LIMIT 10");
         $rutaPhoto = "imagenes/";
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
+							$lastId = $row["id"];
         ?>
         <div class="item col-lg-3 cajas">
             <div class="thumbnail">
@@ -42,7 +44,7 @@ include 'arriba.php';
                             <p class="lead"><?php echo '$'.$row["price"].' USD'; ?></p>
                         </div>
                         <div class="col-md-6">
-														<a class="btn btn-success" data-toggle="modal" data-target="#exampleModal" onclick="mostrarModal('<?php echo $row["photo"]; ?>', '<?php echo $row["name"]; ?>', '<?php echo $row["price"]; ?>')">Agregar</a>
+														<a class="btn btn-success" data-toggle="modal" data-target="#exampleModal" onclick="mostrarModal('<?php echo $row["photo"]; ?>', '<?php echo $row["name"]; ?>', '<?php echo $row["price"]; ?>', '<?php echo $row["id"]; ?>')">Agregar</a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +73,7 @@ include 'arriba.php';
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-		        <a class="btn btn-success" href="agregarcarrito.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar</a>
+		        <a id="modalAgregar" class="btn btn-success" href="agregar2.php?action=addToCart&id=">Agregar</a>
 		      </div>
 		    </div>
 		  </div>
