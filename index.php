@@ -41,7 +41,7 @@ include 'arriba.php';
 							$lastId = $row["id"];
         ?>
         <a href="perfilProducto.php?prod=<?php echo $row['id'];?>">
-        <div class="item col-lg-3 cajas" >
+        <div class="item col-11 col-md-5 col-lg-3 cajas" >
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>

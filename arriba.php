@@ -64,7 +64,7 @@ session_start();
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user"></i> Perfil </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-              <a class="dropdown-item" href="#">Mi Historial de compra</a>
+              <a class="dropdown-item" href="perfilUser.php">Mi perfil</a>
               <a class="dropdown-item" href="cerrar.php"> Cerrar Sesión</a>
             </div>
             </li>';
