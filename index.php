@@ -33,7 +33,8 @@ include 'arriba.php';
             while($row = $query->fetch_assoc()){
 							$lastId = $row["id"];
         ?>
-        <div class="item col-lg-3 cajas">
+        <a href="perfilProducto.php">
+        <div class="item col-lg-3 cajas" >
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
@@ -51,6 +52,7 @@ include 'arriba.php';
                 </div>
             </div>
           </div>
+          </a>
         <?php } }else{ ?>
         <p>No hay productos todavia.</p>
         <?php } ?>
