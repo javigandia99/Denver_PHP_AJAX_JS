@@ -1,6 +1,10 @@
-.images{
+.images {
   height: 250px;
   background-size: contain;
   background-repeat: no-repeat;
+}
 
+.registrodiv {
+  height: 20rem ;
+  width: 10rem;
 }

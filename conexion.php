@@ -1,13 +1,13 @@
 <?php
     //CONEXION A BASE DE DATOS
     $servername = "localhost";
-    $user = "root";
-    $password = "";
+    $userdb = "root";
+    $passworddb = "";
     $dbname = "bd_denver";
     $conn = new mysqli(
         $servername,
-        $user,
-        $password,
+        $userdb,
+        $passworddb,
         $dbname
     );
     // Check connection

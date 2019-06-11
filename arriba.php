@@ -35,6 +35,9 @@ include "conexion.php";
                             <a class="nav-link" href="registro.php">Registrar</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="inicio.php">Identificarse</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="cerrar.php">Cerrar Sesion</a>
                         </li>
                         <li class="nav-item">
