@@ -96,9 +96,7 @@ include 'arriba.php';
 	<div id="products" class="d-flex flex-row justify-content-center flex-wrap">
 		<div class="item col-lg-9 cajas">
 			<div class="cont_principal">
-				<div class="cabecera">
-				</div>
-				<div class="contenido">
+				
 					<div class="principal">
 						<h1>Deja tus datos y te contestaremos cuanto antes</h1>
 						<form name="form_registro" id="form_registro">
