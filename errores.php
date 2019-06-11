@@ -6,11 +6,11 @@ include "conexion.php";
 ?>
 <?php
     $arrErrores = [
-        'registro' => "Successfully registered",
-        'noform' => "Form not send",
-        'notOk' => "Wrong User or Password",
-        'notSession' => "Session not init",
-        'cierreSesion' => "Closed session correctly"
+        'registro' => "¡Registro realizado correctamente!",
+        'noform' => "Formulario no enviado",
+        'notOk' => "Usuario o contraseña erroneos",
+        'notSession' => "Sesión no iniciada",
+        'cierreSesion' => "¡Sesión cerrada correctamente!"
     ];
 
     if(isset($_GET["error"])){
