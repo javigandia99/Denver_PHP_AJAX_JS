@@ -31,17 +31,27 @@ session_start();
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.php">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="quienesSomos.php">Quienes somos</a>
-          </li>
-
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="contacto.php">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienesSomos.php">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="verCarrito2.php">Carrito de la compra</a>
+            </li>
+            <?php
+            if(!isset($_SESSION['user'])){
+              echo '<li class="nav-item active"><a class="nav-link" href="registro.php">Registrar</a></li>';
+              echo '<li class="nav-item active"><a class="nav-link" href="inicio.php">login</a></li>';
+            } else{
+              echo '<li class="nav-item active"><a class="nav-link" href="cerrar.php">Cerrar sesion</a></li>';
+            }
+              ?>
         </ul>
-        
+
         <form class="form-inline">
             <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
             <i class="fas fa-search" aria-hidden="true"></i>
