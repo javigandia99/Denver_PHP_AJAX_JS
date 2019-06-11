@@ -7,17 +7,17 @@ include 'arriba.php';
 
 	}
 ?>
-<div class="item col-lg-12 cajaTemporada" id="cajaIntro">
+<div class="item col-lg-12 justify-content-between cajaTemporada" id="cajaIntro">
   <div class="titleTemporada">
     <h1 id="title">Temporada CGS</h1>
     <h1 id="titleyear">2019</h1>
-
+    <?php	if(isset($_SESSION['user'])){
+      echo  "<h5 id='bienvenido'>Bienvenido  $nomUsu, conoce nuestra ultima temporada</h5>";}else{
+          echo  "<h5>Sorprendete con nuestra ultima temporada</h5>";
+      } ?>
   </div>
   <div class="titleSaludo">
-    <?php
-      echo  "<h5>Bienvenido  $nomUsu</h5>"; ?>
   </div>
-
   </div>
 <main class="panel-body">
     <a href="vercarrito.php" class="cart-link" title="Ver Carta"><i class="glyphicon glyphicon-shopping-cart"></i></a>
