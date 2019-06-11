@@ -42,6 +42,8 @@
         // array_push($_SESSION['carrito'], $arrProducto);
       }
     }
+    header("Location: index.php");
+  } else{
+    header("Location: index.php?error=noLogin");
   }
-  header("Location: index.php");
 ?>
