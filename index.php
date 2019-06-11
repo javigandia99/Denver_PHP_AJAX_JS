@@ -42,7 +42,7 @@ include 'arriba.php';
                             <p class="lead"><?php echo '$'.$row["price"].' USD'; ?></p>
                         </div>
                         <div class="col-md-6">
-                            <a class="btn btn-success" href="agregarcarrito.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar</a>
+														<a class="btn btn-success" data-toggle="modal" data-target="#exampleModal" onclick="mostrarModal('<?php echo $row["photo"]; ?>', '<?php echo $row["name"]; ?>', '<?php echo $row["price"]; ?>')">Agregar</a>
                         </div>
                     </div>
                 </div>
@@ -52,6 +52,31 @@ include 'arriba.php';
         <p>No hay productos todavia.</p>
         <?php } ?>
     </div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">¿Agregar al carrito?</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div style="margin: auto;" class="modal-body">
+		        <!-- body del modal -->
+							<!-- Conteniido generado en js -->
+							<img id="modalImg" width="200px" src="imagenes/logo.png" alt="imgModal">
+							<h5 id="modalTitle">Título</h5>
+							<p id="modalPrice" style="text-align:right;">0,00 €</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		        <a class="btn btn-success" href="agregarcarrito.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- End modal -->
   </main>
         <?php
         include 'abajo.php';
