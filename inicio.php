@@ -30,7 +30,6 @@ if (isset($_SESSION["user"])) {
                 </form>
             </div>
             <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2">
-
                 <?php
 
                 include 'errores.php';
