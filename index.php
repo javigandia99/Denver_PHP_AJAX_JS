@@ -9,7 +9,7 @@ include 'arriba.php';
 	if(isset($_GET['error'])){
 		if ($_GET['error'] === "noLogin") {
 			echo '<div class="alert alert-info" role="alert" style="text-align:center;">';
-			echo 'Es necesario agregar sesión para comprar un producto';
+			echo 'Es necesario iniciar sesión para comprar un producto';
 			echo '</div>';
 		}
 	}
