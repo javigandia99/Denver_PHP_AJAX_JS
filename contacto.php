@@ -1,7 +1,7 @@
 <?php
 include 'arriba.php';
-
 ?>
+
 <style>
 	.contenido {
 		max-width: 760px;
@@ -59,7 +59,6 @@ include 'arriba.php';
 		width: 175px;
 		text-align: right;
 		padding: 7px 15px 0 0;
-		text-transform: uppercase;
 		font-weight: bold;
 	}
 
@@ -96,11 +95,9 @@ include 'arriba.php';
 	<div id="products" class="d-flex flex-row justify-content-center flex-wrap">
 		<div class="item col-lg-9 cajas">
 			<div class="cont_principal">
-				<div class="cabecera">
-				</div>
-				<div class="contenido">
+				
 					<div class="principal">
-						<h1>Deja tus datos y te contestaremos cuanto antes</h1>
+						<h1>Deja tus datos y te contestaremos cuanto antes</h1> <br/> <br/>
 						<form name="form_registro" id="form_registro">
 							<div>
 								<label for="nombre" class="label">Nombre</label>
@@ -130,8 +127,6 @@ include 'arriba.php';
 								<label for="si">Sí</label>
 								<input type="radio" name="spam" id="Por_supuesto" value="Por_supuesto">
 								<label for="definitely">Por supuesto</label>
-								<input type="radio" name="spam" id="eleccion" value="eleccion">
-								<label for="eleccion">¿Tengo elección?</label>
 							</div>
 							<div>
 								<input type="submit" name="submit" id="submit" value="Enviar">
@@ -143,6 +138,7 @@ include 'arriba.php';
 		</div>
 	</div>
 </main>
+
 <?php
 include 'abajo.php';
 

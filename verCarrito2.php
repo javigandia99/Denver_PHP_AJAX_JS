@@ -12,7 +12,7 @@ error_reporting(0);
       <th>Cantidad</th>
       <th>Sub total</th>
       <th></th>
-      <th>&nbsp;</th>
+      
     </tr>
     <?php
     $total = 0;
@@ -28,6 +28,7 @@ error_reporting(0);
       echo "<td>" . $producto['precio'] . "</td>";
       echo "<td>" . $producto['cantidad'] . "</td>";
       echo "<td>" . $subtotal . "</td>";
+      echo "<td><a href='borrarArticulo.php?id=" . $producto['id'] . "'>Eliminar</a></td>";
       echo "</tr>";
     }
     ?>
