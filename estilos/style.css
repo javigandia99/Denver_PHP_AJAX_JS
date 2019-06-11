@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Fjalla+One&display=swap');
 
 body{
   background-color: rgb(242, 242, 242);
@@ -43,8 +44,8 @@ box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
 
 }
 .cajaTemporada{
+  padding-right: 0px;
   display: flex;
-  justify-content: center;
   color: white;
   height: 200px;
   background-image: url("../imagenes/temporada1.png");
@@ -53,6 +54,21 @@ box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
   width: 100%;
   height: 100%;
   align-items: center;
+}
+.cajaTemporada2{
+
+  background-image: url("../imagenes/temporada1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+border-radius: 20px;
+margin: 10px;
+padding: 10px;
+-webkit-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+-moz-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
 }
 h4{
   text-align: center;
@@ -70,22 +86,62 @@ h4{
 }
 .titleSaludo{
   width: 30%;
-height: 20%;
+height: 100%;
+background-image: url("../imagenes/publi.png");
+background-size: cover;
+background-repeat: no-repeat;
  display: flex;
-  justify-content: center;
-  background-color: rgba(10,10,10,0.4);
+justify-content: end;
+align-items: center;
 border-radius: 20px;
-margin: 10px;
 padding: 10px;
--webkit-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
--moz-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+
 }
 #title{
-  font-size: 40pt;
+  margin-left: 20px;
+  font-size: 45pt;
   margin-top: 5%;
   font-family: 'Faster One', cursive;
 }
-#titleyear{
+#title2{
+  color: white;
   font-family: 'Faster One', cursive;
+}
+#titleyear{
+
+  margin-left: 20px;
+
+  font-family: 'Faster One', cursive;
+}
+#titleyear2{
+  color: white;
+  font-family: 'Faster One', cursive;
+}
+#bienvenido{
+  border-radius: 10px;
+
+margin-top: 50%;
+font-family: 'Fjalla One', sans-serif;
+font-size: 25pt;
+padding: 4px;
+  text-align: center;
+  -webkit-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+  -moz-box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+  box-shadow: 6px 10px 31px -3px rgba(0,0,0,0.23);
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+#subir
+{
+  background: none;
+  display: none;
+  border: 0px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+}
+
+#subir:hover {
+  /*background-color: #f00; Add a dark-grey background on hover */
 }

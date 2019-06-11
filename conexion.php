@@ -2,12 +2,12 @@
     //CONEXION A BASE DE DATOS
     $servername = "localhost";
     $userdb = "root";
-    $passworddb = "";
+    $passwordb = "";
     $dbname = "bd_denver";
     $conn = new mysqli(
         $servername,
         $userdb,
-        $passworddb,
+        $passwordb,
         $dbname
     );
     // Check connection

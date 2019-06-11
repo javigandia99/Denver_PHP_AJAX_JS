@@ -7,17 +7,17 @@ include 'arriba.php';
 
 	}
 ?>
-<div class="item col-lg-12 cajaTemporada" id="cajaIntro">
+<div class="item col-lg-12 justify-content-between cajaTemporada" id="cajaIntro">
   <div class="titleTemporada">
     <h1 id="title">Temporada CGS</h1>
     <h1 id="titleyear">2019</h1>
-
+    <?php	if(isset($_SESSION['user'])){
+      echo  "<h5 id='bienvenido'>Bienvenido  $nomUsu, conoce nuestra ultima temporada</h5>";}else{
+          echo  "<h5>Sorprendete con nuestra ultima temporada</h5>";
+      } ?>
   </div>
   <div class="titleSaludo">
-    <?php
-      echo  "<h5>Bienvenido  $nomUsu</h5>"; ?>
   </div>
-
   </div>
 <main class="panel-body">
     <a href="vercarrito.php" class="cart-link" title="Ver Carta"><i class="glyphicon glyphicon-shopping-cart"></i></a>
@@ -33,13 +33,13 @@ include 'arriba.php';
             while($row = $query->fetch_assoc()){
 							$lastId = $row["id"];
         ?>
-        <div class="item col-lg-3 cajas">
+        <a href="perfilProducto.php?prod=<?php echo $row['id'];?>">
+        <div class="item col-lg-3 cajas" >
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
                     <div class="images" style="background-image: url(<?php echo $rutaPhoto.$row['photo']; ?>)">
                     </div>
-                    <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
                     <div class="row">
                         <div class="col-md-6">
                             <p class="lead"><?php echo '$'.$row["price"].' USD'; ?></p>
@@ -51,6 +51,7 @@ include 'arriba.php';
                 </div>
             </div>
           </div>
+          </a>
         <?php } }else{ ?>
         <p>No hay productos todavia.</p>
         <?php } ?>
