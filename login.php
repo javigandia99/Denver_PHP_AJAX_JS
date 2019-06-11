@@ -29,16 +29,14 @@
             $_SESSION["numProductos"] = 0;
 
             header("Location: index.php");
-           } else {
+        } else {
             header("Location: inicio.php?error=notOk");
         }
     } else {
         header("Location: inicio.php?error=noform");
-
-
-
-    	}
+    }
     ?>
-    <br/>
+    <br />
     </body>
+
     </html>
