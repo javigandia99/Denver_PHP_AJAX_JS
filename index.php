@@ -33,14 +33,13 @@ include 'arriba.php';
             while($row = $query->fetch_assoc()){
 							$lastId = $row["id"];
         ?>
-        <a href="perfilProducto.php">
+        <a href="perfilProducto.php?prod=<?php echo $row['id'];?>">
         <div class="item col-lg-3 cajas" >
             <div class="thumbnail">
                 <div class="caption">
                     <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
                     <div class="images" style="background-image: url(<?php echo $rutaPhoto.$row['photo']; ?>)">
                     </div>
-                    <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
                     <div class="row">
                         <div class="col-md-6">
                             <p class="lead"><?php echo '$'.$row["price"].' USD'; ?></p>
