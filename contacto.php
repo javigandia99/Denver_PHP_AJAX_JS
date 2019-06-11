@@ -82,35 +82,8 @@ form .indent, #submit {
 }
 
 </style>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-<script>
-$(document).ready(function() {
-	
-	
-}); 
-</script>
-
-
-
-<script>
-$(document).ready(function() {
-	
-	
-}); 
-</script>
-
-
-
-<script>
-$(document).ready(function() {
-	
-	
-}); 
-</script>
 <main class="panel-body">
     <div id="products" class="d-flex flex-row justify-content-center flex-wrap">
         <div class="item col-lg-9 cajas">
@@ -123,7 +96,7 @@ $(document).ready(function() {
 		<form name="form_registro" id="form_registro">
 			<div>
 				<label for="nombre" class="label">Nombre</label>
-				<input name="nombre" type="text" id="nombre"  >
+				<input name="nombre" type="text" id="nombre" class="required" title="Introduce tu nombre por favor">
 			</div>
 			<div>
 				<label for="email" class="label">Email</label>
