@@ -12,8 +12,8 @@ include 'arriba.php';
     <h1 id="title">Temporada CGS</h1>
     <h1 id="titleyear">2019</h1>
     <?php	if(isset($_SESSION['user'])){
-      echo  "<h5 id='bienvenido'>Bienvenido  $nomUsu, conoce nuestra ultima temporada</h5>";}else{
-          echo  "<h5>Sorprendete con nuestra ultima temporada</h5>";
+      echo  "<h5 class='bienvenido'>Bienvenido  $nomUsu, conoce nuestra ultima temporada</h5>";}else{
+          echo  "<h5 class='bienvenido'>Sorprendete con nuestra ultima temporada</h5>";
       } ?>
   </div>
   <div class="titleSaludo">

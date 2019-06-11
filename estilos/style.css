@@ -80,7 +80,7 @@ padding: 3%;
   align-items: center;
 }
 .cajaTemporada2{
-  border-radius: 20px;
+  border-radius: 20px 0px 0px 20px;
   background-image: url("../imagenes/temporada1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ padding: 10px;
   color: white;
   font-family: 'Faster One', cursive;
 }
-#bienvenido{
+.bienvenido{
   border-radius: 10px;
 
 margin-top: 50%;
