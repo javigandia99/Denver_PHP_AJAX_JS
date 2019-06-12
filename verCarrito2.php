@@ -14,6 +14,7 @@ error_reporting(0);
       <th> </th>
     </tr>
     <?php
+
     $total = 0;
     $totalProductos = 0;
     $carrito = $_SESSION["carrito"];
@@ -49,7 +50,11 @@ error_reporting(0);
       <p id="txtTotal" class="text-center mt-2"><strong>Total <?php echo '$' . $total . ' USD'; ?></strong></p>
     </div>
     <div class="col-12 col-xl-2">
-      <a href="pagos.php" class="btn btn-outline-success btn-block">Tramitar Pedido <i class="fa fa-chevron-right"></i> </a>
+      <?php
+      if(count($_SESSION['carrito']) > 0){
+        echo '<a href="pagos.php" class="btn btn-outline-success btn-block">Tramitar Pedido <i class="fa fa-chevron-right"></i> </a>';
+      }
+      ?>
     </div>
   </div>
 </main>

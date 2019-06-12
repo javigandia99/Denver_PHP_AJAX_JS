@@ -10,6 +10,10 @@ $query = $conn->query("SELECT * FROM clientes WHERE user = " . $_SESSION['user']
 
 $row = $query->fetch_assoc();
 
+if(count($_SESSION['carrito']) < 1){
+  header('Location: verCarrito2.php?noProducts=1');
+}
+
 ?>
 <main class="container">
     <br />
