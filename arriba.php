@@ -18,6 +18,7 @@ if (isset($_SESSION['user'])) {
   <link rel="stylesheet" type="text/css" href="estilos/style.css">
   <script type="text/javascript" src="scripts/agregar.js"></script>
   <script type="text/javascript" src="scripts/cambioCantidad.js"></script>
+  <script type="text/javascript" src="scripts/buscar.js"></script>
   <script src="scripts/script.js"></script>
 
 
