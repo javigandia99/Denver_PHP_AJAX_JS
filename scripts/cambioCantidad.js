@@ -4,7 +4,9 @@ function cambioCantidad(id, auxId) {
   var precio = document.getElementById("txtPrecio" + auxId).innerHTML;
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("txtSubtotal" + auxId).innerHTML = (precio * cantidad);
+      if(cantidad > 0){
+        document.getElementById("txtSubtotal" + auxId).innerHTML = (precio * cantidad);
+      }
     }
   };
   xhttp.open("GET", "actualizarCantidad.php?cantidad=" + cantidad + "&id=" + id, true);

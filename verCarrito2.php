@@ -26,7 +26,7 @@ error_reporting(0);
       echo "<tr>";
       echo "<td>" . $producto['nombre'] . "</td>";
       echo "<td id='txtPrecio" . $auxId . "'>" . $producto['precio'] . "</td>";
-      echo "<td><input id='txtCantidad" . $auxId . "' type='number' name='cantidad' value='" . $producto['cantidad'] . "' onchange='cambioCantidad(" . $producto['id'] . ", " . $auxId . ")'></td>";
+      echo "<td><input id='txtCantidad" . $auxId . "' type='number' min='1' name='cantidad' value='" . $producto['cantidad'] . "' onchange='cambioCantidad(" . $producto['id'] . ", " . $auxId . ")'></td>";
       echo "<td id='txtSubtotal" . $auxId . "'>" . $subtotal . "</td>";
       echo "<td><a href='borrarArticulo.php?id=" . $producto['id'] . "'>Eliminar</a></td>";
       echo "</tr>";
