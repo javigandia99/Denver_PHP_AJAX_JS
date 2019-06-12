@@ -101,11 +101,11 @@ include 'arriba.php';
 						<form name="form_registro" id="form_registro">
 							<div>
 								<label for="nombre" class="label">Nombre</label>
-								<input name="nombre" type="text" id="nombre" class="required" title="Introduce tu nombre por favor">
+								<input name="nombre" type="text" id="nombre" required>
 							</div>
 							<div>
 								<label for="email" class="label">Email</label>
-								<input name="e_mail" type="text" id="e_mail">
+								<input name="e_mail" type="text" id="e_mail" required>
 							</div>
 							<div>
 								<label for="ciudad" class="label">Ciudad</label>
