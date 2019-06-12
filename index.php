@@ -27,9 +27,9 @@ if (isset($_GET['error'])) {
   <div class="titleSaludo">
   </div>
 </div>
-<main class="panel-body">
-  <a href="vercarrito.php" class="cart-link" title="Ver Carta"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+<main>
 
+  <a href="vercarrito.php" class="cart-link" title="Ver Carta"><i class="glyphicon glyphicon-shopping-cart"></i></a>
   <div id="products" class="d-flex flex-row justify-content-center flex-wrap">
 
     <?php
@@ -42,7 +42,7 @@ if (isset($_GET['error'])) {
         $lastId = $row["id"];
         ?>
         <a href="perfilProducto.php?prod=<?php echo $row['id']; ?>">
-          <div class="item col-11 col-md-5 col-lg-3 cajas">
+          <div class="item col-11 col-md-5 col-lg-3 col-xl-3 cajas">
             <div class="thumbnail">
               <div class="caption">
                 <h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4>
