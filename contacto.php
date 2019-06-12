@@ -27,14 +27,10 @@ include 'arriba.php';
 
 	}
 
-	p,
-	li,
-	legend,
 	form {
-		font-size: 18px;
+		font-size: 16px;
 		color: black;
 		line-height: 125%;
-		margin-bottom: 10px;
 	}
 
 	input {
@@ -95,47 +91,47 @@ include 'arriba.php';
 	<div id="products" class="d-flex flex-row justify-content-center flex-wrap">
 		<div class="item col-lg-9 cajas">
 			<div class="cont_principal">
-				
-					<div class="principal">
-						<h1>Deja tus datos y te contestaremos cuanto antes</h1> <br/> <br/>
-						<form name="form_registro" id="form_registro">
-							<div>
-								<label for="nombre" class="label">Nombre</label>
-								<input name="nombre" type="text" id="nombre" class="required" title="Introduce tu nombre por favor">
-							</div>
-							<div>
-								<label for="email" class="label">Email</label>
-								<input name="e_mail" type="text" id="e_mail">
-							</div>
-							<div>
-								<label for="ciudad" class="label">Ciudad</label>
-								<select name="ciudad" id="ciudad">
-									<option value="">--Por favor, selecciona--</option>
-									<option value="madrid">Madrid</option>
-									<option value="barcelona">Barcelona</option>
-									<option value="sevilla">Sevilla</option>
-									<option value="otra">Otra</option>
-								</select>
-							</div>
-							<div>
-								<label for="comentarios" class="label">¿Quieres dejarnos un comentario?</label>
-								<textarea name="comentarios" cols="15" rows="5" id="comentarios"></textarea>
-							</div>
-							<div class="labelBlock">¿Deseas recibir anuncios de ofertas?</div>
-							<div class="indent">
-								<input type="radio" name="spam" id="yes" value="yes">
-								<label for="si">Sí</label>
-								<input type="radio" name="spam" id="Por_supuesto" value="Por_supuesto">
-								<label for="definitely">Por supuesto</label>
-							</div>
-							<div>
-								<input type="submit" name="submit" id="submit" value="Enviar">
-							</div>
-						</form>
-					</div>
+
+				<div class="principal">
+					<h1>Deja tus datos y te contestaremos cuanto antes</h1> <br /> <br />
+					<form name="form_registro" id="form_registro">
+						<div>
+							<label for="nombre" class="label">Nombre</label>
+							<input name="nombre" type="text" id="nombre" required>
+						</div>
+						<div>
+							<label for="email" class="label">Email</label>
+							<input name="e_mail" type="text" id="e_mail" required>
+						</div>
+						<div>
+							<label for="ciudad" class="label">Ciudad</label>
+							<select name="ciudad" id="ciudad">
+								<option value="">--Por favor, selecciona--</option>
+								<option value="madrid">Madrid</option>
+								<option value="barcelona">Barcelona</option>
+								<option value="sevilla">Sevilla</option>
+								<option value="otra">Otra</option>
+							</select>
+						</div>
+						<div>
+							<label for="comentarios" class="label">¿Quieres dejarnos un comentario?</label>
+							<textarea name="comentarios" cols="15" rows="5" id="comentarios"></textarea>
+						</div>
+						<div class="labelBlock">¿Deseas recibir anuncios de ofertas?</div>
+						<div class="indent">
+							<input type="radio" name="spam" id="yes" value="yes">
+							<label for="si">Sí</label>
+							<input type="radio" name="spam" id="Por_supuesto" value="Por_supuesto">
+							<label for="definitely">Por supuesto</label>
+						</div>
+						<div>
+							<input type="submit" name="submit" id="submit" value="Enviar">
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </main>
 
