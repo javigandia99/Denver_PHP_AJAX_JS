@@ -18,6 +18,7 @@ if(isset($_SESSION['user'])){
   <link rel="stylesheet" type="text/css" href="estilos/style.css">
   <script type="text/javascript" src="scripts/agregar.js"></script>
   <script type="text/javascript" src="scripts/cambioCantidad.js"></script>
+  <script type="text/javascript" src="scripts/buscar.js"></script>
   <script src="scripts/script.js"></script>
 
 
@@ -45,10 +46,6 @@ if(isset($_SESSION['user'])){
           </li>
         </ul>
 
-        <form class="form-inline">
-          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </form>
         <ul class="navbar-nav ml-auto nav-flex-icons">
           <li class="nav-item">
             <a href="verCarrito2.php" class="nav-link mt-2">

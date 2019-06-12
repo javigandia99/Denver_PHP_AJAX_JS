@@ -29,13 +29,22 @@ if (isset($_GET['error'])) {
 </div>
 <main>
 
-  <a href="vercarrito.php" class="cart-link" title="Ver Carta"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+		<h3 style="width:100px;margin:auto;">Catálogo</h3>
+		<br>
+		<div style="width:300px;margin:auto;">
+			<input id="txtBuscar" type="text" name="txtBuscar" value="">
+			<button type="button" name="button" onclick="buscar()">Buscar</button>
+		</div>
+		<br>
   <div id="products" class="d-flex flex-row justify-content-center flex-wrap">
-
     <?php
     $lastId = 0;
     //get rows query
-    $query = $conn->query("SELECT * FROM mis_productos ORDER BY id DESC LIMIT 10");
+		if(isset($_GET['busca'])){
+			$query = $conn->query("SELECT * FROM mis_productos WHERE name LIKE '%" . $_GET['busca'] . "%'");
+		} else{
+			$query = $conn->query("SELECT * FROM mis_productos ORDER BY id DESC LIMIT 10");
+		}
     $rutaPhoto = "imagenes/";
     if ($query->num_rows > 0) {
       while ($row = $query->fetch_assoc()) {
