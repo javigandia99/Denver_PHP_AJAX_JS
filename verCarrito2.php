@@ -43,7 +43,7 @@ error_reporting(0);
   </table>
   <div class="row">
     <div class="col-12 col-xl-4">
-      <a href="index.php" class="btn btn-outline-warning"><i class="fa fa-chevron-left"></i> Continuar comprando</a>
+      <a href="index.php#products" class="btn btn-outline-warning"><i class="fa fa-chevron-left"></i> Continuar comprando</a>
     </div>
     <div class="col-12 col-xl-2 offset-xl-4">
       <p class="text-center mt-2"><strong>Total <?php echo '$' . $total . ' USD'; ?></strong></p>
