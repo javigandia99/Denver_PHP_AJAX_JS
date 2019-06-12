@@ -29,11 +29,11 @@ if (isset($_GET['error'])) {
 </div>
 <main>
 
-		<h3 style="width:100px;margin:auto;">Catálogo</h3>
+		<h2 class="text text-center" style="font-size:3em;">Catálogo</h2>
 		<br>
-		<div style="width:300px;margin:auto;">
-			<input id="txtBuscar" type="text" name="txtBuscar" value="">
-			<button type="button" name="button" onclick="buscar()">Buscar</button>
+		<div class="text text-center">
+			<input id="txtBuscar" type="text" name="txtBuscar" value="" class="text text-center" style="border: 3px solid orange; border-radius: 1em; width: 60em; ">
+			<button type="button" class="btn btn-outline-warning"  style="border-radius: 1em;" name="button" onclick="buscar()">Buscar</button>
 		</div>
 		<br>
   <div id="products" class="d-flex flex-row justify-content-center flex-wrap">
