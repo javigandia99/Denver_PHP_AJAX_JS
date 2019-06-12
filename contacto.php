@@ -31,10 +31,9 @@ include 'arriba.php';
 	li,
 	legend,
 	form {
-		font-size: 18px;
+		font-size: 16px;
 		color: black;
 		line-height: 125%;
-		margin-bottom: 10px;
 	}
 
 	input {
