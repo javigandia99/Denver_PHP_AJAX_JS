@@ -3,7 +3,7 @@
 include "conexion.php";
 session_start();
 
-if(isset($_SESSION['user'])){
+if (isset($_SESSION['user'])) {
   $nomUsu = $_SESSION['user'];
 }
 ?>
@@ -44,11 +44,6 @@ if(isset($_SESSION['user'])){
             <a class="nav-link" href="quienesSomos.php">Quienes somos</a>
           </li>
         </ul>
-
-        <form class="form-inline">
-          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </form>
         <ul class="navbar-nav ml-auto nav-flex-icons">
           <li class="nav-item">
             <a href="verCarrito2.php" class="nav-link mt-2">
@@ -66,7 +61,7 @@ if(isset($_SESSION['user'])){
           if (isset($_SESSION['user'])) {
             echo  '<li class="nav-item dropdown">
             <a style="font-size:1.3em; color:black" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user" ></i>  '.$nomUsu.' </a>
+              <i class="fas fa-user" ></i>  ' . $nomUsu . ' </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
               <a class="dropdown-item" href="perfilUser.php">Mi perfil</a>
               <a class="dropdown-item" href="cerrar.php"> Cerrar Sesión</a>

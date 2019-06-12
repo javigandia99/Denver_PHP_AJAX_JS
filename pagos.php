@@ -12,7 +12,7 @@ $row = $query->fetch_assoc();
 
 ?>
 <main class="container">
-    <br/>
+    <br />
     <h1>Vista previa del pedido</h1>
     <div class="row">
         <div class="col-7 mt-5">
