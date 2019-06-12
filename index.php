@@ -32,7 +32,7 @@ if (isset($_GET['error'])) {
 		<h2 class="text text-center" style="font-size:3em;">Catálogo</h2>
 		<br>
 		<div class="text text-center">
-			<input id="txtBuscar" type="text" name="txtBuscar" value="" class="text text-center" style="border: 3px solid orange; border-radius: 1em; width: 60em; ">
+			<input id="txtBuscar" type="text" name="txtBuscar" value="" class="text text-center" style="border: 3px solid orange; border-radius: 1em; width: 50em; ">
 			<button type="button" class="btn btn-outline-warning"  style="border-radius: 1em;" name="button" onclick="buscar()">Buscar</button>
 		</div>
 		<br>
@@ -58,10 +58,10 @@ if (isset($_GET['error'])) {
                 <div class="images" style="background-image: url(<?php echo $rutaPhoto . $row['photo']; ?>)">
                 </div>
                 <div class="row">
-                  <div class="col-md-5">
+                  <div class=" col-4 col-md-5">
                     <p class="lead"><?php echo '$' . $row["price"] . ' USD'; ?></p>
                   </div>
-                  <div class="col-md-5">
+                  <div class="col-4 col-md-5">
                     <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal" onclick="mostrarModal('<?php echo $row["photo"]; ?>', '<?php echo $row["name"]; ?>', '<?php echo $row["price"]; ?>', '<?php echo $row["id"]; ?>')">Agregar</a>
                   </div>
                 </div>
