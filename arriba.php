@@ -52,7 +52,7 @@ if(isset($_SESSION['user'])){
         <ul class="navbar-nav ml-auto nav-flex-icons">
           <li class="nav-item">
             <a href="verCarrito2.php" class="nav-link mt-2">
-              <i class="fas fa-shopping-cart" style="font-size:1.7em; color:springgreen;"></i>
+              <i class="fas fa-shopping-cart" style="font-size:1.3em; color:black;"></i>
             </a>
           </li>
           <?php
@@ -65,7 +65,7 @@ if(isset($_SESSION['user'])){
           <?php
           if (isset($_SESSION['user'])) {
             echo  '<li class="nav-item dropdown">
-            <a style="font-size:1.7em; color:black" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a style="font-size:1.3em; color:black" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user" ></i>  '.$nomUsu.' </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
               <a class="dropdown-item" href="perfilUser.php">Mi perfil</a>
