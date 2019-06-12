@@ -51,7 +51,7 @@ if(isset($_SESSION['user'])){
         </form>
         <ul class="navbar-nav ml-auto nav-flex-icons">
           <li class="nav-item">
-            <a href="verCarrito2.php" class="nav-link">
+            <a href="verCarrito2.php" class="nav-link mt-1">
               <i class="fas fa-shopping-cart"></i>
             </a>
           </li>

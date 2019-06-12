@@ -9,7 +9,7 @@ if (isset($_SESSION["user"])) {
 <main>
     <div class="container-fluid pt-5 pb-3" id="proyects">
         <div class="row">
-            <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2">
+            <div class="col-12 col-md-8 col-lg-4 col-xl-4 p-3 offset-md-2 offset-lg-4 offset-xl-4">
                 <h2>Iniciar Sesión</h2>
                 <form method="post" action="login.php">
                     <div class="form-group" id="user">
@@ -28,7 +28,7 @@ if (isset($_SESSION["user"])) {
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-12 col-lg-8 col-xl-8 p-3 offset-lg-2 offset-xl-2">
+            <div class="col-12 col-md-8 col-lg-4 col-xl-4 p-3 offset-md-2 offset-lg-4 offset-xl-4">
                 <?php
 
                 include 'errores.php';
