@@ -10,7 +10,8 @@ include "conexion.php";
         'noform' => "Formulario no enviado",
         'notOk' => "Usuario o contraseña erroneos",
         'notSession' => "Sesión no iniciada",
-        'cierreSesion' => "¡Sesión cerrada correctamente!"
+        'cierreSesion' => "¡Sesión cerrada correctamente!",
+        'cuentaBorrada' => "Cuenta borrada correctamente"
     ];
 
     if(isset($_GET["error"])){
