@@ -12,12 +12,12 @@ error_reporting(0);
       <th>Cantidad</th>
       <th>Sub total</th>
       <th></th>
-      
     </tr>
     <?php
     $total = 0;
     $totalProductos = 0;
     $carrito = $_SESSION["carrito"];
+    $auxId = 0;
     foreach ($carrito as $producto) {
       // echo "-> " . $clave['nombre'];
       $subtotal = ($producto['precio'] * $producto['cantidad']);
@@ -25,11 +25,12 @@ error_reporting(0);
       $totalProductos += $producto['cantidad'];
       echo "<tr>";
       echo "<td>" . $producto['nombre'] . "</td>";
-      echo "<td>" . $producto['precio'] . "</td>";
-      echo "<td>" . $producto['cantidad'] . "</td>";
-      echo "<td>" . $subtotal . "</td>";
+      echo "<td id='txtPrecio" . $auxId . "'>" . $producto['precio'] . "</td>";
+      echo "<td><input id='txtCantidad" . $auxId . "' type='number' name='cantidad' value='" . $producto['cantidad'] . "' onchange='cambioCantidad(" . $producto['id'] . ", " . $auxId . ")'></td>";
+      echo "<td id='txtSubtotal" . $auxId . "'>" . $subtotal . "</td>";
       echo "<td><a href='borrarArticulo.php?id=" . $producto['id'] . "'>Eliminar</a></td>";
       echo "</tr>";
+      $auxId++;
     }
     ?>
     <p>Num productos: <?php echo $totalProductos; ?></p>
@@ -37,5 +38,5 @@ error_reporting(0);
   </table>
 </main>
 <?php
-include 'abajo.php';
+  include 'abajo.php';
 ?>
