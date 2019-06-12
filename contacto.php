@@ -19,13 +19,13 @@ include 'arriba.php';
 							</div>
 							<div class="form-group">
 								<label for="exampleInputEmail1">Email:</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 							</div>
 							<div class="form-group">
 								<label for="comentarios">¿Quieres dejarnos un comentario?</label>
 								<textarea class="form-control" rows="5" id="comentarios" name="comentarios"></textarea>
 							</div>
-							<div class=" col-8  border border-primary">
+							<div class="col-12 col-md-8 col-xl- 6">
 								<label for="spam">¿Desea recibir publicidad de las temporadas de ropa de nuestra pagina?</label>
 								<br />
 								<input class="offset-1" type="radio" name="spam" id="yes" value="yes">
@@ -33,7 +33,7 @@ include 'arriba.php';
 								<input class="offset-1" type="radio" name="spam" id="no" value="no">
 								<label for="no">No</label>
 							</div>
-							<div class="col-3">
+							<div class="col-12 col-md-8 col-xl-6">
 								<button type="submit" class="btn btn-block btn-outline-primary" id="submit">Enviar</button>
 							</div>
 						</form>

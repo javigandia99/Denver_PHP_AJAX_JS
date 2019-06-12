@@ -23,7 +23,7 @@ if (!isset($_SESSION['user'])) {
               ?>
                 <div class="cajas3">
                   <div class="textoUser">
-                    <h4 class="datos"><?php  echo $nombre; echo " "; echo $surname; ?></h4></br>
+                    <h4 class="datos"><?php  echo $nombre; echo " "; echo $surname; ?></h4><br/>
                         <p class="datos">Usuario: <b><?php echo $nomUsu; ?></b></p>
                         <p class="datos">Email: <b><?php echo $row["email"]; ?></b></p>
                         <p class="datos">Telefono: <b><?php echo $row["phone"]; ?></b></p>
@@ -50,7 +50,7 @@ if (!isset($_SESSION['user'])) {
                       </div>
                       <div style="margin: auto; padding: 10%;" class="modal-body">
                         <!-- body del modal -->
-                          <!-- Conteniido generado en js -->
+                          <!-- Contenido generado en js -->
                           <form method="post" action="modificarUser.php?user=<?php echo $nomUsu?>">
 
                               <div class="form-group row">

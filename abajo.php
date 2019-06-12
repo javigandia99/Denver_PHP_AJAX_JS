@@ -1,10 +1,7 @@
-<!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 
-	<!-- Footer Elements -->
 	<div class="container">
 
-		<!-- Social buttons -->
 		<ul class="list-unstyled list-inline text-center">
 			<li class="list-inline-item">
 				<a class="btn-floating btn-fb mx-1">
@@ -32,20 +29,16 @@
 				</a>
 			</li>
 		</ul>
-		<!-- Social buttons -->
 
 	</div>
-	<!-- Footer Elements -->
 
-	<!-- Copyright -->
 	<div class="footer-copyright text-center py-3">© 2019 Copyright:
 		<a href="#inicio">DENVER</a>
 	</div>
-	<!-- Copyright -->
+
 
 </footer>
 <script>
-	// cuando baja la pagina 250px aparece el boton
 	window.onscroll = function() {
 		scrollFunction()
 	};
@@ -58,7 +51,6 @@
 		}
 	}
 
-	// cuando se pulsa el boton, hace el scroll hacia arriba
 	function topFunction() {
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;

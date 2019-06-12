@@ -6,7 +6,7 @@
     if(count($_SESSION['carrito']) < 2){
       $_SESSION["carrito"] = array();
     } else{
-      // Obbenemos su posición
+      // Obtenemos su posición
       $pos = 0;
       foreach($_SESSION["carrito"] as $producto){
         if($producto['id'] === $_GET['id']){
