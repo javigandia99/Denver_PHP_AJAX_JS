@@ -1,11 +1,15 @@
 <?php
 include 'arriba.php';
 error_reporting(0);
+<<<<<<< HEAD
 // set customer ID in session
 $_SESSION['clienteId'] = 1;
 
 // get customer details by session customer ID
 $query = $conn->query("SELECT * FROM clientes WHERE user = " . $_SESSION['user']);
+=======
+$query = $conn->query("SELECT * FROM clientes WHERE user = " . $_SESSION["user"]);
+>>>>>>> 5743ea85f6c7f0df017cb048da879f4e80a9647d
 $row = $query->fetch_assoc();
 
 ?>

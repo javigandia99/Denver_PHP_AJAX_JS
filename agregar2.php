@@ -42,7 +42,7 @@
         // array_push($_SESSION['carrito'], $arrProducto);
       }
     }
-    header("Location: index.php");
+    header("Location: verCarrito2.php");
   } else{
     header("Location: index.php?error=noLogin");
   }
