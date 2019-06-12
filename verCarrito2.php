@@ -46,7 +46,7 @@ error_reporting(0);
       <a href="index.php" class="btn btn-outline-warning"><i class="fa fa-chevron-left"></i> Continuar comprando</a>
     </div>
     <div class="col-12 col-xl-2 offset-xl-4">
-      <p class="text-center mt-2"><strong>Total <?php echo '$' . $total . ' USD'; ?></strong></p>
+      <p id="txtTotal" class="text-center mt-2"><strong>Total <?php echo '$' . $total . ' USD'; ?></strong></p>
     </div>
     <div class="col-12 col-xl-2">
       <a href="pagos.php" class="btn btn-outline-success btn-block">Tramitar Pedido <i class="fa fa-chevron-right"></i> </a>

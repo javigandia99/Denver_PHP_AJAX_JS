@@ -6,6 +6,8 @@ function cambioCantidad(id, auxId) {
     if (this.readyState == 4 && this.status == 200) {
       if(cantidad > 0){
         document.getElementById("txtSubtotal" + auxId).innerHTML = (precio * cantidad);
+        // <strong>Total <?php echo '$' . $total . ' USD'; ?></strong>
+        document.getElementById("txtTotal").innerHTML = "<strong>Total $" + total + "USD</strong>";
       }
     }
   };
