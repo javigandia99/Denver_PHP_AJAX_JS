@@ -49,10 +49,10 @@ if (isset($_GET['error'])) {
                 <div class="images" style="background-image: url(<?php echo $rutaPhoto . $row['photo']; ?>)">
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                     <p class="lead"><?php echo '$' . $row["price"] . ' USD'; ?></p>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                     <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal" onclick="mostrarModal('<?php echo $row["photo"]; ?>', '<?php echo $row["name"]; ?>', '<?php echo $row["price"]; ?>', '<?php echo $row["id"]; ?>')">Agregar</a>
                   </div>
                 </div>
