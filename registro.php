@@ -12,9 +12,8 @@ include 'arriba.php';
 
     <div class="container-fluid pt-5 pb-3" id="registrodiv">
         <div class="row">
-            <div class="col-10 col-md-10 col-lg-8 col-xl-8 p-3 offset-1 offset-lg-2 offset-xl-2">
+            <div class="col-12 col-md-8 col-lg-4 col-xl-4 p-3 offset-md-2 offset-lg-4 offset-xl-4">
                 <h2>Crear una cuenta</h2>
-                <section class="register-form">
                     <form method="post" action="registro.php">
 
                         <div class="form-group row" id="user">
@@ -45,10 +44,11 @@ include 'arriba.php';
                             <label for="name">Dirección:</label>
                             <input type="text" class="form-control" name="address" id="address" required>
                         </div>
-
                         <div>
                             <button type="submit" class="btn btn-block btn-outline-primary btn-rounded" id="submit">Registrarse</button>
-                            <p>¿Ya tiene una cuenta? <a href="login.php">¡Inicie Sesión!</a></p>
+                        </div>
+                        <div class="mt-2">
+                            <p>¿Ya tiene una cuenta? <a class="btn btn-outline-warning btn-rounded  btn-sm" href="inicio.php">¡Inicie Sesión!</a></p>
                         </div>
                     </form>
             </div>
@@ -68,7 +68,6 @@ include 'arriba.php';
                 $sql .= " VALUES ('" . $user . "','" . $password . " ', '" . $name . "','" . $surname . "','" . $phone . "','" . $email . "','" . $address . "')";
 
                 if ($conn->query($sql) === true) {
-                    echo "Nuevo registro realizado correctamente";
                     header("Location:inicio.php?error=registro");
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
