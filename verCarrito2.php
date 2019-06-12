@@ -33,10 +33,20 @@ error_reporting(0);
       $auxId++;
     }
     ?>
-    <p>Num productos: <?php echo $totalProductos; ?></p>
-    <p>Total: <?php echo $total; ?></p>
+    <p>Numero de productos: <?php echo $totalProductos; ?></p>
   </table>
+  <div class="row">
+    <div class="col-12 col-xl-4">
+      <a href="index.php" class="btn btn-outline-warning">Continuar comprando</a>
+    </div>
+    <div class="col-12 col-xl-2 offset-xl-4">
+      <p class="text-center mt-2"><strong>Total <?php echo '$' . $total . ' USD'; ?></strong></p>
+    </div>
+    <div class="col-12 col-xl-2">
+      <a href="pagos.php" class="btn btn-outline-success btn-block">Tramitar Pedido</a>
+    </div>
+  </div>
 </main>
 <?php
-  include 'abajo.php';
+include 'abajo.php';
 ?>
