@@ -45,7 +45,7 @@ if (isset($_SESSION['user'])) {
                                     <p class="lead"><?php echo '$' . $row["price"] . ' USD'; ?></p>
                                 </div>
                                 <div class="col-md-6">
-                                    <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal" onclick="mostrarModal('<?php echo $row["photo"]; ?>', '<?php echo $row["name"]; ?>', '<?php echo $row["price"]; ?>', '<?php echo $row["id"]; ?>')">Agregar producto</a>
+                                    <a class="btn btn-success" href="agregar2.php?action=addToCart&id=<?php echo $row["id"]; ?>">Agregar producto</a>
                                 </div>
                             </div>
                         </div>
