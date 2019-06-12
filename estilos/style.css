@@ -28,6 +28,7 @@ body{
   background-image: url("../imagenes/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 nav{
   background-color: white;
@@ -167,4 +168,7 @@ background-color: rgba(0, 0, 0, 0.2);
 
 #subir:hover {
   /*background-color: #f00; Add a dark-grey background on hover */
+}
+.datos{
+  display: block;
 }

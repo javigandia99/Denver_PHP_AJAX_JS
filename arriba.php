@@ -68,7 +68,7 @@ if(isset($_SESSION['user'])){
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user"></i>  '.$nomUsu.' </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-              <a class="dropdown-item" href="perfilcliente.php">Mi Perfil</a>
+              <a class="dropdown-item" href="perfilUser.php">Mi perfil</a>
               <a class="dropdown-item" href="cerrar.php"> Cerrar Sesión</a>
             </div>
             </li>';
