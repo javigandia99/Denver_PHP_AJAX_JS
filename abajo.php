@@ -33,7 +33,7 @@
 	</div>
 
 	<div class="footer-copyright text-center py-3">© 2019 Copyright:
-		<a href="#inicio">DENVER</a>
+		<a href="index.php">DENVER</a>
 	</div>
 
 
